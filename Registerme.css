@@ -1,4 +1,11 @@
-#Register{
+body
+{
+	color: white;
+	text-align: center;
+	
+	}
+#Register
+{
 background: blanchedalmond;
 padding-bottom: 23px;
 padding-top: 23px;
@@ -6,6 +13,7 @@ padding-right: 12px;
 padding-left: 12px;
 width: 500px;
 margin: 0 auto;
+
 
 }
 #Main
