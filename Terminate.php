@@ -84,4 +84,3 @@ $dbname= new mysqli($servername, $username, $password,$dbname);
 </div>
 </body>
 </html>	
-
