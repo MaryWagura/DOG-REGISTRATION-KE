@@ -133,7 +133,6 @@ $dbname= new mysqli($servername, $username, $password,$dbname);
             <th>Breed</th>
             <th>Vaccines</th>
             <th>DogImage</th>
-            <th>Dog IDNumber</th>
             <th>Owner ID</th>
             </tr>
             <?php
@@ -149,7 +148,6 @@ $dbname= new mysqli($servername, $username, $password,$dbname);
                     <td><?php echo $rows['Breed'];?></td>
                     <td><?php echo $rows['Vaccines'];?></td>
                     <td><?php echo $rows['DogImage'];?></td>
-                    <td><?php echo $rows['DogIDNumber'];?></td>
                     <td><?php echo $rows['OwnerID'];?></td>
                 </tr>
                 <?php

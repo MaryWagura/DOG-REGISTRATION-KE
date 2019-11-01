@@ -12,7 +12,6 @@ if ($dbname->connect_error) {
 $Name=$_POST['name'];
 $Age=$_POST ['Age'];
 $Color=$_POST ['color'];
-$DogIDNumber=$_POST['DogIDNumber'];
 $OwnerID=$_POST['OwnerID'];
 $Gender=$_POST ['gender'];
 $Breed=$_POST['Breed'];
@@ -23,8 +22,8 @@ $DogImage=$_POST['image'];
 
 
  
- $sql= "INSERT INTO petdetails(Name, Age, Color, DogIDNumber,OwnerID, Gender, Breed, Vaccines, DogImage )
-VALUES ('$Name', '$Age', '$Color','$DogIDNumber','$OwnerID', '$Gender','$Breed','$Vaccines','$DogImage')";
+ $sql= "INSERT INTO petdetails(Name, Age, Color,OwnerID, Gender, Breed, Vaccines, DogImage )
+VALUES ('$Name', '$Age', '$Color','$OwnerID', '$Gender','$Breed','$Vaccines','$DogImage')";
 
         if ($dbname->query($sql) === TRUE) {
     echo "Records entered successfully";
@@ -32,7 +31,7 @@ VALUES ('$Name', '$Age', '$Color','$DogIDNumber','$OwnerID', '$Gender','$Breed',
 } else {
     echo "Error: " . $sql . "<br>" . $dbname->error;
 }
-$insert= $dbname->query("SELECT Name, Age, Color,DogIDNumber,OwnerID, Gender, Breed, Vaccines, DogImage FROM petdetails");
+$insert= $dbname->query("SELECT Name, Age, Color,OwnerID, Gender, Breed, Vaccines, DogImage FROM petdetails");
 
 
 ?>

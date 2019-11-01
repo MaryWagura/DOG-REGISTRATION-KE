@@ -1,5 +1,14 @@
 <?php
- include_once 'Connect.php';
+ $servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "dogregistrationke";
+// Create connection
+$dbname= new mysqli($servername, $username, $password,$dbname);
+// Check connection
+if ($dbname->connect_error) {
+    die("Connection failed: " . $dbname->connect_error);
+} 
 ?>
 
 <!DOCTYPE html>
@@ -30,14 +39,12 @@
         height: 700px;
         color: black;
         font-size: 25px;
-
     }
     #AdminLogo
     {
         width: 50px;
         height: 50px;
         border-radius: 50px;
-
     }
     ul li
     {
@@ -57,7 +64,6 @@
 table.striped-columns th:nth-of-type(even){
     background: rgb(235, 227, 209);
 }
-
 table.border {
     border-collapse: collapse;
     border-spacing: 0;
@@ -67,7 +73,6 @@ table.border th {
     border: 1px solid grey;
     padding: 3px;
 }
-
     </style>
 
 </head>
@@ -186,4 +191,3 @@ table.border th {
 </body>
 
 </html>
-

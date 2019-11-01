@@ -17,22 +17,16 @@ $Email=$_POST ['email'];
 $Age=$_POST['Age'];
 $Gender=$_POST ['gender'];
 $Location=$_POST ['Location'];
-$NumberOfDogs=$_POST['NumberOfDogs'];
-
-
-
-    $sql = "INSERT INTO ownerinformation(FirstName, LastName, IDNumber, PhoneNumber, Email, Age, Gender, Location)
+ $sql = "INSERT INTO admindetails(FirstName, LastName, IDNumber, PhoneNumber, Email, Age, Gender, Location)
 VALUES ('$FirstName', '$LastName', '$IDNumber', '$PhoneNumber','$Email','$Age','$Gender','$Location')";
 
         if ($dbname->query($sql) === TRUE) {
     echo "Records entered successfully";
- header('Location:Registerpet.php');
+ header('Location:Login.php');
 } else {
     echo "Error: " . $sql . "<br>" . $dbname->error;
 }
-$insert= $dbname->query("SELECT FirstName, LastName, IDNumber, PhoneNumber, Email, Age, Gender, Location FROM ownerinformation");
+$insert= $dbname->query("SELECT FirstName, LastName, IDNumber, PhoneNumber, Email, Age, Gender, Location FROM admindetails");
+
+
 ?>
-
-
-
-

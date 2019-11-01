@@ -2,22 +2,22 @@
 
 <html>
 <head>
-	<title>REGISTRATION PAGE</title>
+	<title>ADMIN REGISTRATION PAGE</title>
 	<link rel="stylesheet" type="text/css" href="Registerme.css">
 	<div id="Main">
 
 </head>
 <body>
-	<form action="DBconnection.php" method="post">
+	<form action="DBVet.php" method="post">
 
 	<font color="White">
-	<center><h1>Registration Form</h1></center></font>
+	<center><h1>Admin Registration</h1></center></font>
 		<form method="post" id="Register" action="">
 
 			<h2>Input your details</h2>
 
 			 <div class="form-group">
-		    <label for="Firstname"><b>First Name</label><br><br></b>
+		    <label for="firstname"><b>First Name</label><br><br></b>
 		    <input type="text" class="form-control" name="Firstname" placeholder="Enter First Name" required><br><br>	   
 		  </div>
 		   <div class="form-group">
@@ -55,7 +55,7 @@
 		  
 		   <div class="form-group">	
 		   	<input type="submit" class="btn btn-primary" name="submitReg" value="SUBMIT">
-		   <a href="Registerpet.php">
+		   <a href="Login.php">
 		</a>
 		  </div>
 		  </div>		  

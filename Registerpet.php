@@ -25,9 +25,6 @@
 		    <label for="firstname"><b>Color</label><br></b>
 		    <input type="text" class="form-control" name="color" placeholder="Input the dog's colour" required><br><br><br>   
 		  </div>
-		   <div class="form-group">
-		    <label for="DogIDNumber"><b>Input Dog IDNumber</label><br></b>
-		    <input type="text" class="form-control" name="DogIDNumber" placeholder="Input DogIDNumber" required><br><br><br>   
 		  </div>
 		   <div class="form-group">
 		    <label for="OwnerID"><b>Input Your IDNumber</label><br></b>
