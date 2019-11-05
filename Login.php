@@ -80,6 +80,7 @@ span.psw {
 	<h2>Login Form</h2>
 
 <form action="process_user.php" method="post">
+  <div class="form-group">
   <div class="imgcontainer">
     <img src="pic.png" alt="Avatar" class="avatar">
   </div>
@@ -95,6 +96,7 @@ span.psw {
     <label>
       <input type="checkbox" checked="checked" name="remember"> Remember me
     </label>
+  </div>
   </div>
 
  
