@@ -11,28 +11,28 @@
  	{
  		width: 100%;
  		height: 120px;
- 		background:black;
+ 		background:purple;
  		color: white;
  	}
- 	#sidebar
- 	{
- 		width: 300px;
- 		height: 400px;
- 		background:#d32f2f;
- 		float: left;
- 	}
+ 	
  	#data
- 	{
- 		height: 700px;
+ 	{   float: center;
+ 		height: 200px;
  		color: black;
  		font-size: 25px;
 
+ 	}
+ 	#sidebar
+ 	{
+ 		float: center;
+ 		
  	}
  	#AdminLogo
  	{
  		width: 50px;
  		height: 50px;
  		border-radius: 50px;
+ 		float: center;
 
  	}
  	ul li
@@ -42,7 +42,7 @@
  	}
  	ul li:hover
  	{
- 		background:#d32f2f;
+ 		background:purple;
  		color: white;
  	}
  	#Main
@@ -57,6 +57,9 @@
 		<img src="Admin.jpeg" alt="AdminLogo" id="AdminLogo"> <br><h3>THE DOG REGISTRATION KE</h3>
 	</div>
 	<div id="Main">
+		<div id="data"><br>
+		<center><h3>Hello Admin</h3></center>
+	</div>
 
 	<div id="sidebar">
 		<ul> 
@@ -64,35 +67,31 @@
 			<a href="ViewData.php"><li>View Data</li></a>
 		</ul>
 	</div>
-	<div id="data"><br>
-		<center><h3>Hello Admin</h3></center>
-	</div>
+	<div class="form-group"><br>
+	<a href="Homepage.php">	
+	<div id="button"></div>	    
+			   <button type = "submit" class="button">Logout</button>
+<a href="Logout.php"> </a>
+ 	<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.button {
+  background-color: purple;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  opacity: 0.6;
+  transition: 0.3s;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+}
 
-<!DOCTYPE html>
-<html>
-<head>
-	<title></title>
-</head>
-<body>
+.button:hover {opacity: 1}
+</style>
+			    	
 
-	<table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
-  <th>
-  	<tr>
-  		<th>First Name</th>
-  		<th>Last Name</th>
-  		<th>ID Number</th>
-  		<th>Phone Number</th>
-  		<th>Email</th>
-  		<th>Age</th>
-  		<th>Gender</th>
-  		<th>Location</th>
-  	</tr>
 
-  </th>
-</body>
-</html>
-	
-
-</div>
-</body>
 </html>

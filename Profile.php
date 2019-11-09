@@ -1,24 +1,35 @@
 <?php
 session_start();
-include_once 'Connect.php';
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "dogregistrationke";
+$conn= new mysqli($servername, $username, $password,$dbname);
 $OwnerID = $_SESSION["OwnerID"];
-//echo $OwnerID;
+$IDNumber = $_SESSION["IDNumber"];
+$FirstName=$_SESSION["FirstName"];
 
-$result = mysqli_query($dbname, "SELECT * FROM ownerinformation where IDNumber = '$IDNumber'") ;
+echo $FirstName;
+echo $IDNumber;
 
-$rows= mysqli_fetch_array($result);
-?>
 
-<!DOCTYPE html>
+
+ $result=$conn->query("SELECT * FROM ownerinformation ") or die("Failed to query DB".mysqli_error($conn));
+
+  $rows= mysqli_fetch_array($result);
+
+  
+    ?>
+    <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>User Profile</title>
+    <title>User Profile</title>
      <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-	<style>
+    <style>
 body{
     background: -webkit-linear-gradient(left, #5F0763, #E17EE6);
 }
@@ -31,7 +42,6 @@ body{
     border-radius: 0.5rem;
     background: #fff;
 }
-
 .profile-edit-btn{
     border: none;
     border-radius: 1.5rem;
@@ -41,27 +51,22 @@ body{
     color: #6c757d;
     cursor: pointer;
 }
-
 .profile-img{
     margin-left: 120%;
 }
-
-
-
-		table{
-			border-collapse: collapse;
+        table{
+            border-collapse: collapse;
              width: 100%;
             margin-bottom: 30px;
-		}
-		th, td {
+        }
+        th, td {
             text-align: left;
             padding: 8px;
         }
         tr:nth-child(even) {
             background-color: #f2f2f2;
         }
-
-	</style>
+    </style>
 </head>
 <body>
 <nav class="navbar navbar-inverse">
@@ -80,13 +85,21 @@ body{
         <li class="dropdown">
           <a class="dropdown-toggle" data-toggle="dropdown" 
         </li>
+         <li><a href="OwnerResults.php">Results</a></li>
+          <li><a href="PaymentDetails.php">Payment</a></li>
         <li><a href="Logout.php">Log out</a></li>
+        
+        
+       
+
+        
+
        
       </ul>
       
     </div>s
   </div>
-</nav>	
+</nav>  
 <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -126,6 +139,8 @@ body{
             <?php
             while($rows=mysqli_fetch_array($result))
             {
+                 if($rows['IDNumber']==$IDNumber){
+                
                 ?>
 
                 <tr>
@@ -139,8 +154,8 @@ body{
                     <td><?php echo $rows['Location'];?></td>
                 </tr>
                 <?php
-
             }
+        }
                 ?>
             
         
@@ -150,12 +165,9 @@ body{
                                 </div>
 
                             </div>
-                             <input type="submit" class="profile-edit-btn"  value="Edit Profile"/>
-                   
-    <a href="Logout.php"><input type="submit" class="profile-edit-btn"  value="Logout"/> </a>
-
-                    
-    <a href="Payment.php"><input type="submit" class="profile-edit-btn"  value="Payment"/> </a>    
+                             
+        
+          
                         </div>
 
                     

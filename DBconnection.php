@@ -17,7 +17,7 @@ $Email=$_POST ['email'];
 $Age=$_POST['Age'];
 $Gender=$_POST ['gender'];
 $Location=$_POST ['Location'];
-$NumberOfDogs=$_POST['NumberOfDogs'];
+
 
 
 

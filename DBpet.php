@@ -9,9 +9,9 @@ $dbname= new mysqli($servername, $username, $password,$dbname);
 if ($dbname->connect_error) {
     die("Connection failed: " . $dbname->connect_error);
 } 
-$Name=$_POST['name'];
+$Name=$_POST['Name'];
 $Age=$_POST ['Age'];
-$Color=$_POST ['color'];
+$Color=$_POST ['Color'];
 $OwnerID=$_POST['OwnerID'];
 $Gender=$_POST ['gender'];
 $Breed=$_POST['Breed'];
@@ -27,7 +27,7 @@ VALUES ('$Name', '$Age', '$Color','$OwnerID', '$Gender','$Breed','$Vaccines','$D
 
         if ($dbname->query($sql) === TRUE) {
     echo "Records entered successfully";
- header('Location:Registerpet.php');
+ header('Location:Homepage.php');
 } else {
     echo "Error: " . $sql . "<br>" . $dbname->error;
 }

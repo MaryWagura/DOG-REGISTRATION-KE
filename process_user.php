@@ -49,7 +49,7 @@ $IDNumber=$_POST ['IDNumber'];
  	$_SESSION["FirstName"] = $row['FirstName'];
  	$_SESSION["IDNumber"] = $IDNumber;
  	$_SESSION["OwnerID"] = $row['IDNumber'];
- 	if ($_SESSION["IDNumber"]='33445566')
+ 	if ($_SESSION["IDNumber"]='44556677')
  	{
  		 header("Refresh: 1; url=Admin.php");
    

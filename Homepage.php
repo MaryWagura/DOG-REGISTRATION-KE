@@ -2,15 +2,15 @@
 <html>
 <head>
  <link rel="stylesheet" 
-		href="Homepage.css"> 
-		 <script src="myScript.js"></script> 
+    href="Homepage.css"> 
+     <script src="myScript.js"></script> 
 <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-		
+    
 </head>
 
 <body>
-<h1 style="color: white;">DOG REGISTRATION KE</h1>
-<br><a href="Registerme.php"><button class="button" style="vertical-align:middle"><span>Register </span></button></a>
+<h1 style="color: white;">THE DOG REGISTRATION KE</h1>
+<br><a href="Registerme.php"><button class="button" style="vertical-align:middle"><span>Register </span></button>
 <a href="Login.php"><button class="button" style="vertical-align:middle"><span>Login </span></button></a>
 </body>
 

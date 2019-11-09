@@ -82,7 +82,7 @@ span.psw {
 <form action="process_user.php" method="post">
   <div class="form-group">
   <div class="imgcontainer">
-    <img src="pic.png" alt="Avatar" class="avatar">
+    <img src="Admin.jpeg" alt="Avatar" class="avatar">
   </div>
 
   <div class="container">
