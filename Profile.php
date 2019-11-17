@@ -69,41 +69,20 @@ body{
     </style>
 </head>
 <body>
+
 <nav class="navbar navbar-inverse">
   <div class="container-fluid">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
-      </button>
-      <a class="navbar-brand" href="#">DOG REGISTRATION KE</a>
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Home</a></li>
-        <li class="dropdown">
-          <a class="dropdown-toggle" data-toggle="dropdown" 
-        </li>
-         <li><a href="OwnerResults.php">Results</a></li>
-          <li><a href="PaymentDetails.php">Payment</a></li>
-        <li><a href="Logout.php">Log out</a></li>
-        
-        
-       
-
-        
-
-       
-      </ul>
       
-    </div>s
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="Homepage.php">Home</a></li>
+      <li><a href="OwnerResults.php">Results</a></li>
+       <li><a href="Registerpet.php">Register Pet</a></li>
+      <li><a href="Logout.php">Logout</a></li>
+    </ul>
   </div>
-</nav>  
-<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<!------ Include the above in your HEAD tag ---------->
+</nav>
 
 <div class="container emp-profile">
             <form method="post">

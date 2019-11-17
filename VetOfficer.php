@@ -27,7 +27,7 @@ if ($conn->connect_error) {
         body{
         margin: 0px;
         border: 0px;
-        background: #E1C3E0;
+        background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRq7ck7sTzC7wPS7VbcGXDzpQH5pB4njWvKN7Bw2pRHpLkpexu58Q&s");
     }
     #header
     {
@@ -55,10 +55,7 @@ if ($conn->connect_error) {
         background:#d32f2f;
         color: white;
     }
-    #Main
-    {
-        background-image: url(https://wallpapercave.com/w/wp4038528.jpg);
-    }
+   
         table.striped-columns tbody td:nth-of-type(even),
 table.striped-columns th:nth-of-type(even){
     background: rgb(235, 227, 209);
@@ -76,7 +73,7 @@ table.border th {
 .w3-sidebar a {font-family: "Roboto", sans-serif}
 body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
 </style>
-<body class="w3-content" style="max-width:1200px">
+<body style="max-width:1200px">
 
 <!-- Sidebar/menu -->
 <nav class="w3-sidebar w3-bar-block w3-white w3-collapse w3-top" style="z-index:3;width:250px" id="mySidebar">
@@ -91,36 +88,12 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
   
 </nav>
 
-<!-- Top menu on small screens -->
-<header class="w3-bar w3-top w3-hide-large w3-black w3-xlarge">
-  <div class="w3-bar-item w3-padding-24 w3-wide">LOGO</div>
-  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-24 w3-right" onclick="w3_open()"><i class="fa fa-bars"></i></a>
-</header>
 
-<!-- Overlay effect when opening sidebar on small screens -->
-
-
-<!-- !PAGE CONTENT! -->
-<div class="w3-main" style="margin-left:250px">
+<div  style="margin-left:250px">
 
  
-  </header>
-
-  
-
-  <div class="w3-container w3-text-grey" id="jeans">
-     
- 
-
-  <!-- Product grid -->
-  <div class="w3-row w3-grayscale">
+       <h3><b>THE DOG REGISTRATION KE</b></h3>
     
-
-   
-
-<div id="header">
-       <h3>THE DOG REGISTRATION KE</h3>
-    </div>
         <form action="VetControl.php" method="post">
         <center><h3>Hello Vet Officer</h3></center>
         Enter Dog owner ID Number: <input type="text" name="OwnerID" required>
@@ -154,8 +127,8 @@ if ($conn->connect_error) {
 } 
 
         ?>
-       
-        <table class="striped-columns border">
+       <h3>Overall Assesment</h3>
+        <table style="margin-left: 30px;" class="striped-columns border">
     <thead>
         <tr>
             <th>Question</th>
@@ -169,7 +142,7 @@ if ($conn->connect_error) {
 
     <tbody>
         <tr>
-            <td>Is Enthusiastic?</td>
+            <td>Waste Disposal</td>
             <td><input type="radio" value="1" name="enthusiasm"/></td>
             <td><input type="radio" value="2" name="enthusiasm"/></td>
             <td><input type="radio" value="3" name="enthusiasm"/></td>
@@ -177,7 +150,7 @@ if ($conn->connect_error) {
             <td><input type="radio" value="5" name="enthusiasm"/></td>
         </tr>
         <tr>
-            <td>Is it taken for walks frequently?</td>
+            <td>Fire Safety</td>
             <td><input type="radio" value="1" name="walk"/></td>
             <td><input type="radio" value="2" name="walk"/></td>
             <td><input type="radio" value="3" name="walk"/></td>
@@ -185,7 +158,7 @@ if ($conn->connect_error) {
             <td><input type="radio" value="5" name="walk"/></td>
         </tr>
         <tr>
-            <td>Are vaccines given on Time?</td>
+            <td>Disease Risk Management</td>
             <td><input type="radio" value="1" name="vaccine"/></td>
             <td><input type="radio" value="2" name="vaccine"/></td>
             <td><input type="radio" value="3" name="vaccine"/></td>
@@ -193,7 +166,7 @@ if ($conn->connect_error) {
             <td><input type="radio" value="5" name="vaccine"/></td>
         </tr>
         <tr>
-            <td>Does the dog exercise often?</td>
+            <td>Electricity safety</td>
             <td><input type="radio" value="1" name="exercise"/></td>
             <td><input type="radio" value="2" name="exercise"/></td>
             <td><input type="radio" value="3" name="exercise"/></td>
@@ -202,7 +175,7 @@ if ($conn->connect_error) {
         </tr>
 
         <tr>
-            <td>Is it trained?</td>
+            <td>Ventilation</td>
             <td><input type="radio" value="1" name="trained"/></td>
             <td><input type="radio" value="2" name="trained"/></td>
             <td><input type="radio" value="3" name="trained"/></td>
@@ -211,7 +184,7 @@ if ($conn->connect_error) {
         </tr>
 
          <tr>
-            <td>Does the dog interact with others well?</td>
+            <td>Exercise facilities</td>
             <td><input type="radio" value="1" name="interacts"/></td>
             <td><input type="radio" value="2" name="interacts"/></td>
             <td><input type="radio" value="3" name="interacts"/></td>
@@ -220,7 +193,7 @@ if ($conn->connect_error) {
         </tr>
 
         <tr>
-            <td>Is the dog healthy?</td>
+            <td>Sleeping areas</td>
             <td><input type="radio" value="1" name="healthy"/></td>
             <td><input type="radio" value="2" name="healthy"/></td>
             <td><input type="radio" value="3" name="healthy"/></td>
@@ -229,7 +202,7 @@ if ($conn->connect_error) {
         </tr>
 
         <tr>
-            <td>Is the dog active?</td>
+            <td>Food and water hygiene</td>
             <td><input type="radio" value="1" name="active"/></td>
             <td><input type="radio" value="2" name="active"/></td>
             <td><input type="radio" value="3" name="active"/></td>
@@ -241,7 +214,7 @@ if ($conn->connect_error) {
 </table>
 <center>
 
-    <input  type="submit" value="Submit"></center>
+    <input  type="submit" value="Submit"></center><br>
 </form>
 
 <center>  <iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=Africa%2FNairobi&amp;src=dGlzaG1jY2xhaW45QGdtYWlsLmNvbQ&amp;src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&amp;src=ZW4ua2UjaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&amp;color=%23039BE5&amp;color=%2333B679&amp;color=%230B8043" style="border-width:0" width="500" height="500" frameborder="0" scrolling="no"></iframe></center>
