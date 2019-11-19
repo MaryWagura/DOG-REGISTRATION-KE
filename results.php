@@ -89,7 +89,7 @@ ID Number: <input type="text" name="OwnerID" required>
  <p></p>
  <input  type="submit" value="Submit">
  </form>
-<!--
+
 <?php
 $servername = "localhost";
 $username = "root";
@@ -122,7 +122,7 @@ $result= mysqli_query($conn,"SELECT enthusiasm,walk,vaccine,exercise,trained,int
     echo '<script>window.location="Profile.php"</script';
 }
 ?>
--->
+
     </div>
 
 </div>

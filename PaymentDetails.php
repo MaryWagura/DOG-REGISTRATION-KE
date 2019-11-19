@@ -13,16 +13,16 @@ $OwnerID=$_SESSION["OwnerID"];
  $_SESSION['DogLicenseNumber'] = $DogLicenseNumber;
  
 
-// $servername = "localhost";
-// $username = "root";
-// $password = "";
-// $dbname = "dogregistrationke";
-// $FirstName=$_SESSION['FirstName'];
-// $IDNumber=$_SESSION['IDNumber'];
+$servername = "localhost";
+ $username = "root";
+ $password = "";
+ $dbname = "dogregistrationke";
+ $FirstName=$_SESSION['FirstName'];
+ $IDNumber=$_SESSION['IDNumber'];
 
-// $DogLicenseNumber=$_SESSION["DogLicenseNumber"];
+ $DogLicenseNumber=$_SESSION["DogLicenseNumber"];
 
-// $LicenseNumber=$_SESSION["LicenseNumber"];
+ $LicenseNumber=$_SESSION["LicenseNumber"];
 
 
    #$conn= new mysqli($servername, $username, $password,$dbname);

@@ -1,4 +1,17 @@
-<!DOCTYPE html>
+<?php 
+session_start();
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "dogregistrationke";
+$conn= new mysqli($servername, $username, $password,$dbname);
+$OwnerID = $_SESSION["OwnerID"];
+$IDNumber = $_SESSION["IDNumber"];
+$FirstName=$_SESSION["FirstName"];
+$_SESSION['DogLicenseNumber'];
+$DogLicenseNumber=$_SESSION["DogLicenseNumber"];
+ ?>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
   <title>Results View</title>

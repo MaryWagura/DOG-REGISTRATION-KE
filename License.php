@@ -70,6 +70,8 @@ $dbname = "dogregistrationke";
 $FirstName=$_SESSION['FirstName'];
 $IDNumber=$_SESSION['IDNumber'];
 $OwnerID=$_SESSION["OwnerID"];
+$_SESSION['DogLicenseNumber'];
+
 $DogLicenseNumber=$_SESSION["DogLicenseNumber"];
 
    $conn= new mysqli($servername, $username, $password,$dbname);

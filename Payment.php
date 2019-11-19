@@ -4,14 +4,13 @@ $servername = "localhost";
 $username = "root";
 $password = "";
 $dbname = "dogregistrationke";
+$_SESSION['DogLicenseNumber'];
 $DogLicenseNumber="DogLicenseNumber";
 $FirstName=$_SESSION['FirstName'];
 $IDNumber=$_SESSION['IDNumber'];
 $OwnerID=$_SESSION["OwnerID"];
-$DogLicenseNumber=$_SESSION["DogLicenseNumber"];
 
-
-   $conn= new mysqli($servername, $username, $password,$dbname);
+$conn= new mysqli($servername, $username, $password,$dbname);
     $result=$conn->query("SELECT * FROM ownerinformation where FirstName='$FirstName' and IDNumber ='$IDNumber'") or die("Failed to query DB".mysql_error());
  $row= mysqli_fetch_array($result);
  ?>
@@ -25,6 +24,7 @@ $DogLicenseNumber=$_SESSION["DogLicenseNumber"];
   $connection= new mysqli($servername, $username, $password,$dbname);
  $res=$connection->query("SELECT * FROM petdetails where DogLicenseNumber='$DogLicenseNumber' ") or die("Failed to query DB".mysql_error());
  $row= mysqli_fetch_array($res);
+   $_SESSION['DogLicenseNumber'] = $row["DogLicenseNumber"]."<br><br>";
  ?>
  <!DOCTYPE html>
  <html>
